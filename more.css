@@ -1,0 +1,31 @@
+html {
+  scroll-behavior: smooth;
+}
+
+root: {
+  --font-family: 'Inter', sans-serif;
+  --grey, #8b8b8b;
+  --background-color: #18181a;
+  --primary: #F87878;
+  --red: red;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background-color: var(--background-color);
+  color: var(--grey);
+}
+
+blockquote {
+  padding: 10px;
+  color: 
+}
+
+.red {
+  color: var(--primary);
+}
+
+.glow {
+  color: var(--primary);
+  text-shadow: 3px 1px 15px var(--red);
+}
