@@ -1,31 +1,144 @@
+:root {
+  --font-family: 'Inter', sans-serif;
+  --background: #18181a;
+  --dark-grey: #292929;
+  --grey: #b8b8b8;
+  --white: white;
+  --light-red: #F87878;
+  --red: red;
+  --light-blue: #84A8FD;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-root: {
-  --font-family: 'Inter', sans-serif;
-  --grey, #8b8b8b;
-  --background-color: #18181a;
-  --primary: #F87878;
-  --red: red;
-}
-
 body {
   font-family: Inter, sans-serif;
-  background-color: var(--background-color);
+  background-color: var(--background);
+}
+
+.center {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--light-red);
+  text-shadow: 3px 1px 15px red;
+  font-weight: bold;
+}
+
+p, p1, p2, p3, p4, p5, p6 {
   color: var(--grey);
 }
 
-blockquote {
-  padding: 10px;
-  color: 
-}
-
 .red {
-  color: var(--primary);
+  color: var(--light-red);
 }
 
-.glow {
-  color: var(--primary);
-  text-shadow: 3px 1px 15px var(--red);
+.red-glow {
+  color: var(--light-red);
+  text-shadow: 3px 1px 15px red;
+}
+
+h1, h {
+	font-size: 45px;
+}
+
+h2, {
+	font-size: 35px;
+  font-weight: bold;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 25px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 17px;
+}
+
+.btn {
+  background: var(--background);
+  color: var(--light-red);
+  font-size: 20px;
+  min-width: 150px;
+  max-width: 300px;
+  height: 50px;
+  border: 2px solid var(--light-red);
+  padding-right: 15px;
+  padding-left: 15px;
+  cursor: pointer;
+  transition: 0.15s, border 0s;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.pill {
+  border-radius: 30px;
+}
+
+.btn:hover {
+  color: var(--light-red);
+  box-shadow: 3px 1px 15px var(--light-red);
+  border: none;
+}
+
+a {
+  color: var(--light-red);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--light-blue);
+  font-weight: bold;
+}
+
+.boop {
+  box-shadow: -4px 4px 0 0 var(--light-red),
+-4px 4px 0 2px var(--red);
+  background: var(--background);
+  color: var(--light-red);
+  font-size: 20px;
+  min-width: 150px;
+  max-width: 300px;
+  height: 50px;
+  border: 2px solid var(--light-red);
+  padding-right: 15px;
+  padding-left: 15px;
+  cursor: pointer;
+  transition: 0.15s, border 0s;
+}
+
+.boop:hover {
+  box-shadow: -1px 1px 0 0 var(--light-red),
+-1px 1px 0 2px var(--red);
+}
+
+code, pre, .code {
+  background-color: var(--dark-grey);
+  color: var(--light-red);
+  font-size: 17px;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+fixed-top {
+  position: fixed;
+  top: 0;
+}
+
+fixed-btm {
+  position: fixed;
+  bottom: 0;
 }
