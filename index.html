@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://morecss.earthrulerr.repl.co/more.css" rel="stylesheet" type="text/css">
-    <title>more.css</title>
+    <link href="https://cdn.earthrulerr.repl.co/more.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
   </head>
   <body>
     <h1 class="center">
       more.css
     </h1>
+    <center>
+      <button class="btn pill small" onclick="location.href='https://cdn.earthrulerr.repl.co/demo.html';">
+        demo
+      </button>
+      <button class="btn pill small" onclick="location.href='https://replit.com/@EarthRulerr/morecss?v=1';">
+        template
+      </button>
+    </center>
+    <h3>Installation</h3>
+    <code>https://cdn.earthrulerr.repl.co/more.css</code><br><br>
+    <button class="btn pill" id="copy" onclick="copy()">Copy</button>
+    <p>Add the above text into your <code>&lt;head></code> element, example: </p><br>
+    <code>&lt;link href="https://cdn.earthrulerr.repl.co/more.css" rel="stylesheet" type="text/css"></code>
     <h3>Typography</h3>
     <p>This is some text, its default color is grey.</p>
     <h1>h1</h1>
@@ -16,8 +29,21 @@
     <h4>h4</h4>
     <h5>h5</h5>
     <h6>h6</h6>
-    <p>Links are red with blue hpver.</p>
-    <p>My <a href="https://earthrulerr.repl.co">website</a> is decent.</p>
+    <b>Bold text</b><br><br>
+    <i>Italic text</i><br><br>
+    <u>Underline text</u><br><br>
+    <s>Strike text</s><br><br>
+    <p>Links are red with blue hover:</p>
+    <p>My <a href="https://earthrulerr.repl.co">website</a> is decent.</p><br>
+    <p>Thematic break:</p>
+    <hr><br>
+    <mark>Some marked text.</mark><br><br>
+    <mark class="rounded">Rounded marked text</mark>
+    <br>
+    <blockquote>
+      This is a very cool and epic blockquote.<br>
+      - me
+    </blockquote>
     <h3>
       Buttons
     </h3>
@@ -36,6 +62,11 @@
       pill button
     </button>
     <br><br>
+    <code>&lt;button class="btn pill small">pill button&lt;/button></code><br><br>
+    <button class="btn pill small">
+      small button
+    </button>
+    <br><br>
     <code>&lt;button class="boop">boop/3d&lt;/button></code><br><br>
     <button class="boop">
       boop/3d
@@ -50,6 +81,32 @@
     <button class="boop pill">
       pill
     </button>
+    <h3>
+      Positioning
+    </h3>
+    <code>&lt;button class="btn fixed-top rounded">fixed-top&lt;/button></code>
     <br><br>
+    <p>This would make a button fixed to the top of the page. Useful for creating navbars and such elements.</p><br>
+    <code>&lt;button class="btn fixed-btm rounded">fixed-btm&lt;/button></code>
+    <br><br>
+    <p>This would make a button fixed to the bottom of the page. Useful for creating footers and such elements.</p><br>
+    <code>&lt;button class="btn sticky rounded bg">sticky&lt;/button></code>
+    <br><br>
+    <p><b>Note:</b> Fixed must be used on a background, this is why "bg" is in the class above.</p>
+    <p>Creates a sticky button that follows the page when scrolled past. Useful for navbars and such elements.</p>
+    <h3>
+      Images
+    </h3>
+    <p>By default images do not change:</p>
+    <img src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" width="350" height="250">
+    <p><code>class="rounded"</code>:</p>
+    <img class="rounded" src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" width="350" height="250">
+    <p><code>class="pill"</code>:</p>
+    <img class="pill" src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" width="350" height="250">
+    <br><br>
+    <code>&lt;p class="footer rounded"><br>more.css&lt;/p></code>
+    <p class="footer rounded">
+      more.css
+    </p>
   </body>
 </html>
