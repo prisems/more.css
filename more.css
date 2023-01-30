@@ -22,14 +22,45 @@ body {
   text-align: center;
 }
 
+blockquote {
+   border-right: 4px solid var(--light-red);  border-left: 4px solid var(--light-red);
+  color: var(--grey);
+  opacity: .7;
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+  font-style: italic;
+}
+
+mark {
+  background-color: var(--light-red);
+}
+
+mark.rounded {
+  border-radius: 5px;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+::selection {
+  background: var(--light-red);
+}
+::-moz-selection {
+  background: var(--light-red);
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   color: var(--light-red);
   text-shadow: 3px 1px 15px red;
   font-weight: bold;
 }
 
-p, p1, p2, p3, p4, p5, p6 {
+p, p1, p2, p3, p4, p5, p6, b, i, u, s {
   color: var(--grey);
+}
+
+hr {
+  border: 1px solid var(--grey);
 }
 
 .red {
@@ -136,9 +167,44 @@ code, pre, .code {
 fixed-top {
   position: fixed;
   top: 0;
+  padding: 5px;
 }
 
 fixed-btm {
   position: fixed;
   bottom: 0;
+}
+
+.footer {
+  background-color: var(--light-red);
+  color: IndianRed;
+  font-weight: bold;
+  border-top-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+  box-shadow: var(--light-red) 0px 1px 15px;
+  text-opacity: 0.3;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+}
+
+.bg {
+  background-color: var(--background);
+  opacity: 0.75;
+}
+
+.small {
+  min-width: 100px;
+  max-width: 300px;
+  height: 35px
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 15px;
+  text-align: center;
 }
