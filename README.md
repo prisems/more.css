@@ -3,7 +3,7 @@ Documentation: https://morecss.earthrulerr.repl.co
 
 ### Installation:
 
-You can use <code>get clone</code> to cloen the whole repository or use <code>link href</code>:
+You can use <code>git clone</code> to cloen the whole repository or use <code>link href</code>:
 Add the following to the header of your HTML file:
 
 <code>&lt;link href="https://morecss.earthrulerr.repl.co/more.css" rel="stylesheet" type="text/css"></code>
