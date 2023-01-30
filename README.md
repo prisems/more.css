@@ -1,5 +1,4 @@
 # more.css
-In the works CSS stylesheet.
 Documentation: https://morecss.earthrulerr.repl.co
 
 ### Installation:
